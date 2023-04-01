@@ -1,0 +1,43 @@
+.header {
+    background-image: url(../img/background_1.jpg);
+    background-size: cover;
+    background-position: center;
+
+    &__logo {
+        height: 100%;
+        justify-self: center;
+    }
+
+    &__burger {
+        background-color: $color-secondary;
+        position: absolute;
+        display: block;              
+        height: 5rem;
+        width: 5rem;
+        top: 20px;
+        right: 20px;        
+        
+        text-align: center;
+        cursor: pointer;
+
+        &__line {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 3rem;
+            height: 2px;
+            background-color: gray;
+            display: inline-block;
+            z-index: 2000;
+        }
+    }
+
+    &__icon {
+        position: relative;
+        margin-top: 3.5rem;
+    }
+
+    &__h1 {
+        color: $color-primary;
+    }
+}
