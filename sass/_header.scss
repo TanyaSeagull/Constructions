@@ -28,6 +28,10 @@
         z-index: 3;
     }
 
+    &__line:last-child {
+        margin-bottom: 0;
+    }
+
     &__title {
         display: flex;
         justify-content: space-between;
@@ -38,5 +42,24 @@
 
     &__h1 {
         color: $color-primary;
+        font-weight: 500;
+        font-size: 64px;
+        line-height: 95px;
+        text-align: center;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        max-width: 734px;
+        margin: 0 auto 17px;
+    }
+
+    &__h4 {
+        color: $color-primary;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 27px;
+        text-align: center;
+        text-transform: uppercase;
+        max-width: 734px;
+        margin: 0 auto;
     }
 }

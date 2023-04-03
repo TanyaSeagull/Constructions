@@ -3,6 +3,11 @@ $font-primary: 'Open Sans', sans-serif;
 $font-main: 'Oswald', sans-serif;
 
 //FONT SIZE
+h1, h2, h3, h4, h5, p {
+    margin: 0;
+    padding: 0;
+}
+
 .font-h2 {
     font-family: $font-main;
     font-weight: 500;

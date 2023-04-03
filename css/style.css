@@ -1,3 +1,7 @@
+h1, h2, h3, h4, h5, p {
+  margin: 0;
+  padding: 0; }
+
 .font-h2 {
   font-family: "Oswald", sans-serif;
   font-weight: 500;
@@ -67,6 +71,8 @@ body {
     background-color: #f9f7f6;
     margin-bottom: 4px;
     z-index: 3; }
+  .header__line:last-child {
+    margin-bottom: 0; }
   .header__title {
     display: flex;
     justify-content: space-between;
@@ -74,4 +80,34 @@ body {
     padding-top: 20px;
     margin-bottom: 112px; }
   .header__h1 {
-    color: #f9f7f6; }
+    color: #f9f7f6;
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 95px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    max-width: 734px;
+    margin: 0 auto 17px; }
+  .header__h4 {
+    color: #f9f7f6;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    text-transform: uppercase;
+    max-width: 734px;
+    margin: 0 auto; }
+
+.about {
+  min-height: 1080px;
+  position: relative; }
+  .about__info {
+    position: absolute;
+    max-width: 1080px;
+    min-height: 300px;
+    width: 100%;
+    top: -150px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #f7f7f7; }
