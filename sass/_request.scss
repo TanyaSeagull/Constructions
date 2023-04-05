@@ -1,0 +1,24 @@
+.request {
+    background-color: $color-secondary;
+    padding-top: 30px;
+    padding-bottom: 40px;
+
+    &__flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__flex-left {
+        color: $color-primary;
+    }
+
+    &request__h4 {
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 71px;
+        text-transform: uppercase;
+        letter-spacing: 0.02em;
+        margin-bottom: 20px;
+    }
+}
