@@ -3,22 +3,56 @@
     padding-top: 30px;
     padding-bottom: 40px;
 
+    @media only screen and (max-width: 1280px) {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
     &__flex {
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        @media only screen and (max-width: 768px) {
+            flex-wrap: wrap;
+        }
     }
 
     &__flex-left {
         color: $color-primary;
     }
 
-    &request__h4 {
-        font-weight: 700;
+    &__h4 {
+        font-weight: bold;
         font-size: 48px;
         line-height: 71px;
         text-transform: uppercase;
         letter-spacing: 0.02em;
-        margin-bottom: 20px;
+        margin-bottom: 7px;
+    }
+
+    &__h5 {
+        font-weight: 700;
+        font-size: 24px;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+    }
+
+    &__btn {
+        border: none;
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        text-transform: uppercase;
+        font-family: $font-main;
+        font-weight: 500;
+        font-size: 14px;
+        letter-spacing: 0.05em;
+        padding: 14px 30px;
+        margin-top: 20px;
+    }
+
+    &__icon {
+        margin-right: 15px;
     }
 }
