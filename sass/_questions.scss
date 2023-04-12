@@ -1,0 +1,40 @@
+.questions {
+    padding-top: 150px;
+    padding-bottom: 110px;
+
+    &__h2 {
+        margin-bottom: 50px;
+    }
+
+    &__h3 {
+        text-transform: uppercase;
+        color: $color-secondary;
+        margin-bottom: 22px;
+    }
+
+    &__p {
+        margin-bottom: 40px;
+        color: $color-grey;
+        max-width: 730px;
+    }
+
+    &__h3.opened::before,
+    &__h3.closed::before {
+        content: "";
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        background-image: url(../img/arrow.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-right: 13px;
+    }
+
+    &__h3.opened::before {
+        transform: rotate(-90deg);
+    }
+
+    @media only screen and (max-width: 1280px) {
+        padding: 150px 15px;
+    }
+}
