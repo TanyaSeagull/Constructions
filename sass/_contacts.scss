@@ -34,18 +34,17 @@
         margin: 0 auto 13px;
     }
 
-    &__h3 {
+    &__h3 a {
         text-transform: uppercase;
-
-        &-grey {
-            color: $color-grey;
-            margin-bottom: 18px;
-        }
-
-        &-accent {
+        text-decoration: none;
+        color: inherit;
+        & {
             color: $color-secondary;
         }
     }
 
-
+    &__h3-grey {
+        color: $color-grey;
+        margin-bottom: 18px;
+    }
 }

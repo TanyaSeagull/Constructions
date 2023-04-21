@@ -83,6 +83,10 @@ img {
     align-items: flex-end;
     padding-top: 20px;
     margin-bottom: 112px; }
+    @media only screen and (max-width: 1280px) {
+      .header__title {
+        padding-left: 15px;
+        padding-right: 15px; } }
   .header__h1 {
     color: #f9f7f6;
     font-weight: 500;
@@ -312,20 +316,6 @@ img {
     margin-bottom: 40px;
     color: #999999;
     max-width: 730px; }
-  .questions__h3.opened::before, .questions__h3.closed::before {
-    content: "";
-    display: inline-block;
-    width: 15px;
-    height: 15px;
-    background-image: url(../img/arrow.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-right: 13px; }
-  .questions__h3.opened::before {
-    transform: rotate(-90deg); }
-  @media only screen and (max-width: 1280px) {
-    .questions {
-      padding: 150px 15px; } }
 
 .partners {
   padding-top: 122px;
@@ -415,18 +405,26 @@ img {
     width: 50px;
     height: 50px;
     margin: 0 auto 13px; }
-  .contacts__h3 {
-    text-transform: uppercase; }
-    .contacts__h3-grey {
-      color: #999999;
-      margin-bottom: 18px; }
-    .contacts__h3-accent {
+  .contacts__h3 a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: inherit; }
+    .contacts__h3 a {
       color: #F7654A; }
+  .contacts__h3-grey {
+    color: #999999;
+    margin-bottom: 18px; }
 
 .footer {
   background-color: #404149;
   color: #f9f7f6;
   padding: 30px 0; }
+  @media only screen and (max-width: 1280px) {
+    .footer {
+      padding: 30px 15px; } }
   .footer__flex {
     display: flex;
     justify-content: space-between; }
+    @media only screen and (max-width: 768px) {
+      .footer__flex {
+        flex-direction: column; } }
