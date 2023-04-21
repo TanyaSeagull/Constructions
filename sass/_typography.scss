@@ -1,0 +1,39 @@
+
+//FONT SIZE
+h1, h2, h3, h4, h5, p {
+    margin: 0;
+    padding: 0;
+}
+
+.font-h2 {
+    font-family: $font-main;
+    font-weight: 500;
+    font-size: 36px;
+    text-transform: uppercase;
+    
+}
+
+.font-h3 {
+    font-family: $font-main;
+    font-weight: 500;
+    font-size: 24px;
+    
+}
+
+.font-h4 {
+    font-family: $font-main;
+    font-weight: 500;
+    font-size: 21px;
+    
+}
+
+.font-p {
+    font-family: $font-primary;
+    font-size: 16px;    
+}
+
+.font-p-reviews {
+    font-family: $font-primary;
+    font-size: 14px;
+    line-height: 21px;    
+}
